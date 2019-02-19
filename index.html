@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Developer Notes: -->
+    <!-- Using BEM naming conventions >>> http://getbem.com/naming/ -->
+    <!-- Using Harry Robert’s namespacing techniques @ https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/ -->
+    <!-- Use element IDs only for js -->
+    <title>Happy Leaf</title>
+
+    <!-- Fonts Start -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <!-- Fonts End -->
+    <link rel="stylesheet" type="text/css" href="./css/style-sheet.css">
+  </head>
+
+  <body>
+    <div id="body-wrapper" class="l-body">
+
+      <!-- GRID A -->
+      <div id="header" class="l-header">
+
+        <!-- This is a Block/Layout (l-header, l-header__title, l-header__title-socket, ect) -->
+        <div class="l-header__title">
+          <div class="l-header__title-socket">
+            <!-- These are Blocks/Components (c-title, c-title__text, ect) -->
+            <div class="c-title">
+              <h1 class="c-title__text">Happy Leaf</h1>
+            </div>
+          </div><!-- l-header__title-socket -->
+        </div>
+
+        <!-- This is a Block/Layout (l-header, l-header__nav, l-header__nav-socket, ect) -->
+        <div class="l-header__nav">
+          <div class="l-header__nav-socket">
+            <!-- These are Blocks/Components (c-nav, c-nav__list, ect) -->
+            <div class="c-nav">
+              <ul class="c-nav__list">
+                <li class="c-nav__link"><a href="./index.html">Home</a></li>
+                <li class="c-nav__link"><a href="./about.html">About</a></li>
+                <li class="c-nav__link"><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- GRID B -->
+      <div id="intro" class="l-intro">
+
+        <!-- Intro Banner Layout -->
+        <div class="l-intro__banner">
+          <div class="l-intro__banner-socket">
+            <!-- Intro Banner Component -->
+            <div class="c-banner">
+              <h2 class="c-banner__text">Welcome to Happy Leaf!</h2>
+              <div class="c-banner__img"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- GRID C -->
+      <div id="menu" class="l-portfolio">
+        <div class="l-portfolio-sub-grid">
+
+          <!-- Portfolio Title Layout -->
+          <div class="l-portfolio__title">
+            <div class="l-portfolio__title-socket">
+              <!-- Portfolio Title Component -->
+              <div class="c-portfolio-title">
+                <h2 class="c-portfolio-title__text">This is where your work goes:</h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 1 Layout -->
+          <div class="l-portfolio__project-1">
+            <div class="l-portfolio__project-1-socket">
+              <!-- Project 1 Component -->
+              <div class="c-project-1">
+                <h3 class="c-project-1__title">Project 1 Title</h3>
+                <p class="c-project-1__disc">Project discription: Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.</p>
+                <a href="#" class="c-project-1__link"></a>
+                <div class="c-project-1__img">Project 1 Background Image</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 Layout -->
+          <div class="l-portfolio__project-2">
+            <div class="l-portfolio__project-2-socket">
+              <!-- Project 2 Component -->
+              <div class="c-project-2">
+                <h3 class="c-project-2__title">Project 2 Title</h3>
+                <p class="c-project-2__disc">Project discription: Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.</p>
+                <a href="#" class="c-project-2__link"></a>
+                <div class="c-project-2__img">Project 2 Background Image</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 Layout -->
+          <div class="l-portfolio__project-3">
+            <div class="l-portfolio__project-3-socket">
+              <!-- Project 3 Component -->
+              <div class="c-project-3">
+                <h3 class="c-project-3__title">Project 3 Title</h3>
+                <p class="c-project-3__disc">Project discription: Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.</p>
+                <a href="#" class="c-project-3__link"></a>
+                <div class="c-project-3__img">Project 3 Background Image</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 Layout -->
+          <div class="l-portfolio__project-4">
+            <div class="l-portfolio__project-4-socket">
+              <!-- Project 4 Component -->
+              <div class="c-project-4">
+                <h3 class="c-project-4__title">Project 4 Title</h3>
+                <p class="c-project-4__disc">Project discription: Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.</p>
+                <a href="#" class="c-project-4__link"></a>
+                <div class="c-project-4__img">Project 4 Background Image</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 Layout -->
+          <div class="l-portfolio__project-5">
+            <div class="l-portfolio__project-5-socket">
+              <!-- Project 5 Component -->
+              <div class="c-project-5">
+                <h3 class="c-project-5__title">Project 5 Title</h3>
+                <p class="c-project-5__disc">Project discription: Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.</p>
+                <a href="#" class="c-project-5__link"></a>
+                <div class="c-project-5__img">Project 5 Background Image</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 Layout -->
+          <div class="l-portfolio__project-6">
+            <div class="l-portfolio__project-6-socket">
+              <!-- Project 6 Component -->
+              <div class="c-project-6">
+                <h3 class="c-project-6__title">Project 6 Title</h3>
+                <p class="c-project-6__disc">Project discription: Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.</p>
+                <a href="#" class="c-project-6__link"></a>
+                <div class="c-project-6__img">Project 6 Background Image</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- GRID D -->
+      <div id="footer" class="l-footer">
+
+        <!-- Contact Layout -->
+        <div class="l-footer__contact">
+          <div class="l-footer__contact-socket">
+            <!-- Contact Component -->
+            <div class="c-contact" style="">
+              <h2 class="c-contact__title">Here is how you can reach us.</h2>
+              <ul class="c-contact__list">
+                <li><a class="c-contact__link" href="https://www.facebook.com">Facebook</a></li>
+                <li><a class="c-contact__link" href="https://twitter.com/happyleaf_nw">Twitter</a></li>
+                <li><a class="c-contact__link" href="https://www.instagram.com/explore/locations/1020799437/happy-leaf">Instagram</a></li>
+                <li><a class="c-contact__link" href="mailto:happyleafpdx@gmail.com">Email</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </body>
+</html>
