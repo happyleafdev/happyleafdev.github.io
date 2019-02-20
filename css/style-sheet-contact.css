@@ -1,18 +1,18 @@
 /* --------------------------| VARIABLES |----------------------- */
 :root {
-  /* --black-border: thick solid black;
-  --purple-border: thick dashed purple; */
-  /* --red-border: medium solid red;
-  --blue-border: thin solid blue; */
-  /* --green-border: medium dotted black; */
-  /* --project-background-1: white;
+  --black-border: thick solid black;
+  --purple-border: medium dashed purple;
+  --red-border: medium solid red;
+  /* --blue-border: thin solid blue; */
+  /* --green-border: medium dotted green; */
+  --project-background-1: white;
   --project-background-2: brown;
   --project-background-3: blue;
   --project-background-4: green;
-  --project-background-5: orange; */
+  --project-background-5: orange;
   --font-libre: 'Libre Franklin', sans-serif;
   --font-ssp: 'Source Sans Pro', sans-serif;
-  --main-margin: 1.5% 12.5% 1.5% 12.5%;
+  --main-margin: 1.5% 2.5% 1.5% 2.5%;
 }
 
 
@@ -43,8 +43,6 @@ body {
   grid-column: 1 / 5;
 
   background-color: var(--project-background-1);
-  /* background-image: url('https://i.imgur.com/zwF1Ywf.jpg');
-  background-repeat: round; */
 
   /* Sub Flexbox */
   display: flex;
@@ -59,16 +57,17 @@ body {
   grid-column: 1 / 5;
 
   background-color: var(--project-background-1);
-  /* background-image: url('https://i.imgur.com/zwF1Ywf.jpg');
-  background-repeat: round; */
+  background-image: url('https://i.imgur.com/zwF1Ywf.jpg');
+  background-repeat: round;
 
 }
 
 /* Grid C */
-.l-portfolio {
+.l-menu {
   border: var(--purple-border);
   grid-row: 3 / 4;
   grid-column: 1 / 5;
+
 
   background-color: var(--project-background-1);
   /* background-image: url('https://i.imgur.com/zwF1Ywf.jpg');
@@ -157,113 +156,67 @@ body {
 /* INTRO COMPONENTS [C] */
 
 .c-banner {
-  border: var(--green-border);
+  border: medium dotted green;
+  text-align: center;
 }
 
-.c-banner__text {}
+.c-banner__text {
 
-.c-banner__img {}
+}
+
+.c-banner__img {
+
+}
 
 
 
 
-/* ------------ PORTFOLIO -------------- */
+/* ------------ MENU -------------- */
 
-/* PORTFOLIO LAYOUT [L] */
+/* MENU LAYOUT [L] */
 
-/* Sub-Grid */
-.l-portfolio-sub-grid {
+.l-menu-socket {
   border: var(--red-border);
   /* margin-left: 12.5%;
   margin-right: 12.5%; */
   margin: var(--main-margin);
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
 }
 
-/* Sub-Grid A */
-.l-portfolio__title {
+.l-menu__title {
   border: var(--green-border);
   background-color: var(--project-background-2);
-  grid-column: span 2;
 }
 
-.l-portfolio__title-socket {}
+.l-menu__title-socket {}
 
 
-/* Sub-Grid B */
-.l-portfolio__project-1 {
+.l-menu__project-1 {
   border: var(--green-border);
   background-color: var(--project-background-4);
-  grid-column: span 1;
 }
 
-.l-portfolio__project-1-socket {}
+.l-menu__project-1-socket {}
 
 
-/* Sub-Grid C */
-.l-portfolio__project-2 {
+/* Project 1 */
+.l-menu__project-2 {
   border: var(--green-border);
   background-color: var(--project-background-3);
-  grid-column: span 1;
 }
 
 .l-portfolio__project-2-socket {}
 
 
-/* Sub-Grid D */
-.l-portfolio__project-3 {
-  border: var(--green-border);
-  background-color: var(--project-background-2);
-  grid-column: span 2;
-}
+/* MENU COMPONENTS [C] */
 
-.l-portfolio__project-3-socket {}
+/* Menu Title */
 
+.c-menu-title {}
 
-/* Sub-Grid E */
-.l-portfolio__project-4 {
-  border: var(--green-border);
-  background-color: var(--project-background-3);
-  grid-column: span 1;
-}
-
-.l-portfolio__project-4-socket {}
-
-/* Sub-Grid F */
-
-.l-portfolio__project-5 {
-  border: var(--green-border);
-  background-color: var(--project-background-4);
-  grid-column: span 1;
-}
-
-.l-portfolio__project-5-socket {}
-
-/* Sub-Grid G */
-
-.l-portfolio__project-6 {
-  border: var(--green-border);
-  background-color: var(--project-background-2);
-  grid-column: span 2;
-}
-
-.l-portfolio__project-6-socket {}
+.c-menu-title__text {}
 
 
-
-/* PORTFOLIO COMPONENTS [C] */
-
-/* Sub-Grid A */
-
-.c-portfolio-title {}
-
-.c-portfolio-title__text {}
-
-
-/* Sub-Grid B */
+/* Project 1 */
 
 .c-project-1 {}
 
@@ -276,7 +229,7 @@ body {
 .c-project-1__link {}
 
 
-/* Sub-Grid C */
+/* Project 2 */
 
 .c-project-2 {}
 
@@ -287,57 +240,6 @@ body {
 .c-project-2__disc {}
 
 .c-project-2__link {}
-
-
-/* Sub-Grid D */
-
-.c-project-3 {}
-
-.c-project-3__img {}
-
-.c-project-3__title {}
-
-.c-project-3__disc {}
-
-.c-project-3__link {}
-
-
-/* Sub-Grid E */
-
-.c-project-4 {}
-
-.c-project-4__img {}
-
-.c-project-4__title {}
-
-.c-project-4__disc {}
-
-.c-project-4__link {}
-
-/* Sub-Grid F */
-
-.c-project-5 {}
-
-.c-project-5__img {}
-
-.c-project-5__title {}
-
-.c-project-5__disc {}
-
-.c-project-5__link {}
-
-
-/* Sub-Grid G */
-
-.c-project-6 {}
-
-.c-project-6__img {}
-
-.c-project-6__title {}
-
-.c-project-6__disc {}
-
-.c-project-6__link {}
 
 
 

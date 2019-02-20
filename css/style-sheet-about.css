@@ -1,0 +1,199 @@
+/* --------------------------| VARIABLES |----------------------- */
+:root {
+  --black-border: thick solid black;
+  --purple-border: medium dashed purple;
+  --red-border: medium solid red;
+  /* --blue-border: thin solid blue; */
+  /* --green-border: medium dotted green; */
+  --project-background-1: white;
+  --project-background-2: brown;
+  --project-background-3: blue;
+  --project-background-4: green;
+  --project-background-5: orange;
+  --font-libre: 'Libre Franklin', sans-serif;
+  --font-ssp: 'Source Sans Pro', sans-serif;
+  --main-margin: 1.5% 2.5% 1.5% 2.5%;
+}
+
+
+/* --------------------------| PAGE/LAYOUT LEVEL |----------------------- */
+
+body {
+  /* margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; */
+  background-color: grey;
+  font-family: var(--font-ssp);
+  font-family: var(--font-libre);
+}
+
+.l-body {
+  border: var(--black-border);
+  display: grid;
+  grid-template-rows: 1fr 8fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* Grid A */
+.l-header {
+  border: var(--purple-border);
+  grid-row: 1 / 2;
+  grid-column: 1 / 5;
+
+  background-color: var(--project-background-1);
+
+  /* Sub Flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Grid B */
+.l-intro {
+  border: var(--purple-border);
+  grid-row: 2 / 3;
+  grid-column: 1 / 5;
+
+  background-color: var(--project-background-1);
+  background-image: url('https://i.imgur.com/zwF1Ywf.jpg');
+  background-repeat: round;
+
+}
+
+/* Grid C */
+.l-footer {
+  border: var(--purple-border);
+  grid-row: 3 / 4;
+  grid-column: 1 / 5;
+
+  background-color: var(--project-background-1);
+  /* background-image: url('https://i.imgur.com/zwF1Ywf.jpg');
+  background-repeat: round; */
+
+  /* Sub Flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+
+/* -------------------------| SECTIONAL LEVEL |-------------------------- */
+
+
+/* -------------- HEADER -------------- */
+
+/* HEADER LAYOUT [L] */
+
+.l-header__title {
+  border: var(--red-border);
+  order: 2;
+  flex: auto;
+}
+
+.l-header__title-socket {
+  border: var(--blue-border);
+}
+
+.l-header__nav {
+  border: var(--red-border);
+  order: 1;
+  flex: 1;
+}
+
+.l-header__nav-socket {
+  border: var(--blue-border);
+}
+
+
+/* HEADER COMPONENTS [C] */
+
+.c-title {
+  border: var(--green-border);
+}
+
+.c-title__text {}
+
+.c-nav {
+  border: var(--green-border);
+}
+
+.c-nav__list {}
+
+.c-nav__link {}
+
+
+
+/* -------------- INFO -------------- */
+
+/* INFO LAYOUT [L] */
+
+.l-intro__banner {
+  border: var(--red-border);
+  margin: var(--main-margin);
+}
+
+.l-intro__banner-socket {
+  border: var(--blue-border);
+}
+
+
+/* INFO COMPONENTS [C] */
+
+.c-banner {
+  border: medium dotted green;
+  text-align: center;
+}
+
+.c-banner__text {
+
+}
+
+.c-banner__img {
+
+}
+
+
+
+/* -------------- FOOTER -------------- */
+
+/* FOOTER LAYOUT [L] */
+
+.l-footer__contact {
+  border: var(--red-border);
+  margin: var(--main-margin);
+  flex: auto;
+}
+
+.l-footer__contact-socket {
+  border: var(--blue-border);
+}
+
+
+/* FOOTER COMPONENTS [C] */
+
+.c-contact {
+  border: var(--green-border);
+}
+
+.c-contact__title {}
+
+.c-contact__list {}
+
+.c-contact__link {}
+
+
+
+
+
+/* ----------------------------| MEDIA QUERIES |------------------------- */
+
+/* Media queries < 700px */
+
+  /* @media (min-width: 700px) {} */
+
+/* Media queries < 500px */
+
+  /* @media (min-width: 500px) {} */
