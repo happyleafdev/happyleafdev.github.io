@@ -12,12 +12,12 @@
 
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
 
@@ -57,33 +57,25 @@
       <!-- HEADER -->
       <div id="header" class="l-header">
 
-      <div class="l-header__open-nav">
-        <button onclick="openNav()">&#9776;</button>
-      </div>
+        <div class="c-header__open-nav">
+          <button onclick="openNav()">&#9776;</button>
+        </div>
 
-        <!-- SUB-ITEM: TITLE
-        This is a Block/Layout (l-header, l-header__title, l-header__title-socket, ect) -->
-        <!-- <div class="l-header__title"> -->
-          <!-- These are Blocks/Components (c-title, c-title__text, ect) -->
-          <div class="c-title">
-            <h1 class="c-title__text">
-              <a href="./index.html">Happy Leaf</a>
-            </h1>
-          </div>
-        <!-- </div> -->
 
-        <!-- SUB-ITEM: NAV
-        This is a Block/Layout (l-header, l-header__nav, l-header__nav-socket, ect) -->
-        <!-- <div class="l-header__nav"> -->
-          <!-- These are Blocks/Components (c-nav, c-nav__list, ect) -->
-          <div class="c-nav">
-            <ul class="c-nav__list">
-              <li class="c-nav__link"><a href="#intro">Home</a></li>
-              <li class="c-nav__link"><a href="#about">About</a></li>
-              <li class="c-nav__link"><a href="#info">Contact</a></li>
-            </ul>
-          </div>
-        <!-- </div> -->
+        <div class="c-title">
+          <h1 class="c-title__text">
+            <a href="./index.html">happyleaf</a>
+          </h1>
+        </div>
+
+
+        <div class="c-nav">
+          <ul class="c-nav__list">
+            <li class="c-nav__link"><a href="#intro">Home</a></li>
+            <li class="c-nav__link"><a href="#about">About</a></li>
+            <li class="c-nav__link"><a href="#info">Contact</a></li>
+          </ul>
+        </div>
 
       </div>
 
@@ -92,13 +84,19 @@
       <!-- INTRO -->
       <div id="intro" class="l-intro">
 
-        <!-- SUB-ITEM: BANNER -->
-        <!-- <div class="l-intro__banner"> -->
-          <!-- Banner Component -->
+        <!-- LOGO -->
           <div class="c-banner">
-            <h2 class="c-banner__text">Welcome...</h2>
+            <h2 class="c-banner__text"></h2>
+            <svg class="c-banner__logo" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 504 504" style="enable-background:new 0 0 504 504;" xml:space="preserve">
+              <path class="c-banner__leaf-2" d="M231.9,358.8c0,0-123.6-133.4,21.1-319.7c91.9,89.5,141.5,192,8.9,319.7c-8.9-57.8-10.6-116.3-4.1-159.8
+            	C236,233.5,231.9,358.8,231.9,358.8z"/>
+              <path class="c-banner__leaf-1" d="M219.6,451.8c0,0-140.3,37.8-218.2-133.9c97.5-31.7,188.4-28.7,229.4,112.6c-44.2-15.2-86.2-35.8-114.5-56.6
+            	C132.5,402.3,219.6,451.8,219.6,451.8z"/>
+              <path class="c-banner__leaf-3" d="M261.2,443.8c0,0,18.2-171,240.8-183.6c-6.6,121.1-48.8,220.1-222.1,205c35.6-42.3,76.3-79.8,111.3-102.2
+            	C353,368.8,261.2,443.8,261.2,443.8z"/>
+            </svg>
           </div>
-        <!-- </div> -->
 
       </div>
 
@@ -107,35 +105,24 @@
       <!-- MAIN -->
       <div id="main" class="l-main">
 
-        <!-- SUB-ITEM: MAIN TITLE -->
-        <!-- <div class="l-main__title"> -->
-          <!-- Menu Title Component -->
-          <div class="c-main-title">
-            <h2 class="c-main-title__text">Menus</h2>
-          </div>
-        <!-- </div> -->
+        <div class="c-main-title">
+          <h2 class="c-main-title__text">Menus</h2>
+        </div>
 
-        <!-- SUB-ITEM: MENU 1 -->
-        <!-- <div class="l-main__menu-1"> -->
-          <!-- Menu 1 Component -->
-          <div class="c-menu-1">
-            <h3 class="c-menu-1__title">Weedmaps</h3>
-            <p class="c-menu-1__disc">Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.</p>
-            <a href="https://weedmaps.com/dispensaries/happy-leaf" class="c-menu-1__link">Weedmaps</a>
-            <img class="c-menu-1__img" src="./img/smoke.jpg" height="250px" width="250px">
+        <div class="c-menu-1">
+          <h3 class="c-menu-1__title">Weedmaps</h3>
+          <div class="c-menu-1__link">
+            <a href="https://weedmaps.com/dispensaries/happy-leaf">Menu</a>
           </div>
-        <!-- </div> -->
+        </div>
 
-        <!-- SUB-ITEM: MENU 2 -->
-        <!-- <div class="l-main__menu-2"> -->
-          <!-- Menu 2 Component -->
-          <div class="c-menu-2">
-            <h3 class="c-menu-2__title">Leafly</h3>
-            <p class="c-menu-2__disc">Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.</p>
-            <a href="https://www.leafly.com/dispensary-info/happy-leaf" class="c-menu-2__link">Leafly</a>
-            <img class="c-menu-2__img" src="./img/roll.jpg" height="250px" width="250px">
+
+        <div class="c-menu-2">
+          <h3 class="c-menu-2__title">Leafly</h3>
+          <div class="c-menu-2__link">
+            <a href="https://www.leafly.com/dispensary-info/happy-leaf">Menu</a>
           </div>
-        <!-- </div> -->
+        </div>
 
       </div>
 
@@ -143,8 +130,8 @@
       <!-- ABOUT -->
       <div id="about" class="l-about">
         <div class="c-about">
-          <p class="c-about__intro">Some things about the store: </p>
-          <p class="c-about__disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit labore libero fugiat officiis iusto provident.</p>
+          <h2 class="c-about__intro">About</h2>
+          <p class="c-about__disc">We strive to provide you with quality tested cannabis and cannabis infused products. We carry the finest bud, edibles, prerolls, concentrates, and topicals that we can find so you can get the exact products you're looking for. Our budtenders are knowledgeable, warm, and absolutely engaged in providing you the care that you need. Our products are all lab-tested and approved. We look forward to helping you today.</p>
         </div>
       </div>
 
@@ -156,20 +143,24 @@
       <div id="info" class="l-info">
 
         <div class="c-info">
-          <div class="c-info__map">
-            <img src="./img/leaves.jpg" alt="store_map" width="250px" height="250px">
+
+          <div class="c-info__hours-title">
+            <h2>Hours</h2>
           </div>
 
-
           <div class="c-info__hours">
-            <p>Store Hours</p>
             <p>Monday - Friday: 8am - 10pm</p>
             <p>Saturday & Sunday: 8am - 9pm</p>
           </div>
 
 
           <div class="c-info__phone">
-            <p>1-503-557-3068</p>
+            <p>1-971-800-0420</p>
+            <p>1301 NE Broadway St, Portland, OR 97232</p>
+          </div>
+
+          <div class="c-info__map">
+            <img src="./img/leaves.jpg" alt="store_map">
           </div>
 
         </div>
@@ -182,33 +173,72 @@
       <!-- CONTACT -->
       <div id="footer" class="l-footer">
 
-        <!-- SUB-ITEM: CONTACT -->
-        <!-- <div class="l-footer__contact"> -->
-          <!-- Contact Component -->
-          <div class="c-contact">
-            <h2 class="c-contact__logo">Happy Leaf</h2>
-            <h3 class="c-contact__title">We're an OLCC/OHA licensed recreational medical marijuana dispensary, bringing the best quality tested cannabis and compassionate care.</h3>
-            <ul class="c-contact__list">
-              <li><a class="c-contact__link" href="https://www.facebook.com">Facebook</a></li>
-              <li><a class="c-contact__link" href="https://twitter.com/happyleaf_nw">Twitter</a></li>
-              <li><a class="c-contact__link" href="https://www.instagram.com/explore/locations/1020799437/happy-leaf">Instagram</a></li>
-              <li><a class="c-contact__link" href="mailto:happyleafpdx@gmail.com">Email</a></li>
-            </ul>
-          </div>
-        <!-- </div> -->
+        <div class="c-contact">
+          <h2 class="c-contact__logo">Contact</h2>
+          <p class="c-contact__title">We're an OLCC/OHA licensed recreational medical marijuana dispensary, bringing the best quality tested cannabis and compassionate care.</p>
+          <ul class="c-contact__list">
+            <li>
+              <a class="c-contact__link" href="https://www.facebook.com">
+                <svg class="c-contact__link-icon" viewBox="0 0 24 24">
+                  <path d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm1.546-14.298V8.553c0-.172.01-.306.029-.4a.712.712 0 0 1 .129-.28.534.534 0 0 1 .324-.19 2.71 2.71 0 0 1 .597-.052h1.356V5.333h-2.167c-1.255 0-2.155.252-2.703.757-.547.504-.82 1.247-.82 2.229v1.383H8.666V12h1.623v6.667h3.256V12h2.168L16 9.702h-2.454z">
+                  </path>
+                </svg>
+              </a>
+            </li>
 
-        <!-- SUB-ITEM: LEGAL -->
-        <!-- <div class="l-footer__legal"> -->
-          <!-- Legal Component -->
-          <div class="c-legal" style="">
-            <p class="c-legal__text">Copyright 2019 © Happy Leaf Dispensary. All Rights Reserved. </p>
-          </div>
-        <!-- </div> -->
+            <li>
+              <a class="c-contact__link" href="https://twitter.com/happyleaf_nw">
+                <svg class="c-contact__link-icon">
+                  <path d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm6.667-15.48a5.813 5.813 0 0 1-1.574.392c.592-.328.993-.792 1.202-1.391-.542.297-1.12.5-1.735.61-.541-.532-1.207-.798-1.997-.798-.755 0-1.4.246-1.933.739-.533.492-.8 1.087-.8 1.785 0 .187.023.38.068.578a8.112 8.112 0 0 1-3.143-.777 7.662 7.662 0 0 1-2.491-1.864 2.33 2.33 0 0 0-.372 1.274c0 .432.11.833.33 1.203.22.37.516.669.888.898a2.883 2.883 0 0 1-1.235-.32v.031c0 .61.207 1.145.622 1.606.414.46.937.75 1.569.87a3.053 3.053 0 0 1-.72.087c-.157 0-.33-.013-.515-.04.175.506.496.921.964 1.247.468.325.999.493 1.59.504-.992.718-2.123 1.078-3.392 1.078-.242 0-.462-.01-.66-.031 1.27.755 2.668 1.132 4.197 1.132.97 0 1.88-.141 2.732-.425.852-.284 1.58-.664 2.183-1.141a7.857 7.857 0 0 0 1.56-1.645c.438-.62.763-1.267.978-1.941a6.664 6.664 0 0 0 .313-2.356c.536-.359.993-.794 1.37-1.304z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="c-contact__link" href="https://www.instagram.com/explore/locations/1020799437/happy-leaf">
+                <svg class="c-contact__link-icon" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0"/>
+                  <path d=" m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0"/><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="c-contact__link" href="mailto:happyleafpdx@gmail.com">
+                <svg class="c-contact__link-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                		<path d="M306,612c-28.152,0-55.284-3.672-81.396-11.016c-26.112-7.347-50.49-17.646-73.134-30.906 s-43.248-29.172-61.812-47.736c-18.564-18.562-34.476-39.168-47.736-61.812c-13.26-22.646-23.562-47.022-30.906-73.135
+                			C3.672,361.284,0,334.152,0,306s3.672-55.284,11.016-81.396s17.646-50.49,30.906-73.134s29.172-43.248,47.736-61.812
+                			s39.168-34.476,61.812-47.736s47.022-23.562,73.134-30.906S277.848,0,306,0c42.024,0,81.702,8.058,119.034,24.174
+                			s69.768,37.944,97.308,65.484s49.368,59.976,65.484,97.308S612,263.976,612,306c0,28.152-3.672,55.284-11.016,81.396
+                			c-7.347,26.109-17.646,50.487-30.906,73.134c-13.26,22.644-29.172,43.248-47.736,61.812
+                			c-18.562,18.564-39.168,34.479-61.812,47.736c-22.646,13.26-47.022,23.562-73.136,30.906C361.284,608.328,334.152,612,306,612z
+                			 M453.492,179.928H163.404c-2.856,0-5.304,0.918-7.344,2.754s-3.06,4.386-3.06,7.65v32.436c0,1.632,0.612,2.448,1.836,2.448
+                			l152.388,86.904l1.227,0.612c0.813,0,1.428-0.204,1.836-0.612l147.492-86.904c0.813-0.408,1.428-0.612,1.836-0.612
+                			c0.405,0,1.02-0.204,1.836-0.612c1.632,0,2.448-0.816,2.448-2.448v-31.212c0-3.264-1.021-5.814-3.063-7.65
+                			S456.348,179.928,453.492,179.928z M245.412,310.284c0.408-0.408,0.612-1.021,0.612-1.836c0-1.227-0.408-1.836-1.224-1.836
+                			l-87.516-50.185c-1.224-0.408-2.244-0.408-3.06,0c-0.816,0-1.224,0.612-1.224,1.836v131.58c0,1.227,0.612,2.04,1.836,2.448h1.224
+                			c0.816,0,1.224-0.204,1.224-0.612L245.412,310.284z M351.9,320.076c-0.408-1.227-1.431-1.428-3.063-0.612l-33.66,19.584
+                			c-4.08,2.448-8.361,2.448-12.852,0l-29.376-16.521c-1.224-0.816-2.244-0.816-3.06,0l-111.996,104.04
+                			c-0.408,0.405-0.612,1.224-0.612,2.445c0,0.408,0.408,1.021,1.224,1.836c2.448,0.816,4.08,1.227,4.896,1.227H450.43
+                			c0.816,0,1.635-0.408,2.448-1.227c0-1.632-0.204-2.649-0.612-3.06L351.9,320.076z M462.06,253.98h-2.445l-83.232,49.572
+                			c-0.813,0-1.224,0.612-1.224,1.836c-0.408,0.408-0.204,1.02,0.609,1.833L459,397.188c0.816,0.816,1.428,1.227,1.836,1.227h1.224
+                			c1.227-1.227,1.839-2.04,1.839-2.448V256.429C463.896,255.612,463.284,254.796,462.06,253.98z">
+                    </path>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- LEGAL -->
+        <div class="c-legal" style="">
+          <p class="c-legal__text">Copyright 2019 © Happy Leaf Dispensary. All Rights Reserved. </p>
+        </div>
 
       </div>
-
-
-
     </div>
 
   <script>
