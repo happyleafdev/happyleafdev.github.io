@@ -11,7 +11,8 @@
   --zero-padding: 0 0 0 0;
 
 
-  --title-font-size: 68px;
+  --title-font-size: 90px;
+  --title-line-height: 3rem;
 
   --dark-green: #152619;
   --med-green: #426f4c;
@@ -584,7 +585,7 @@ body {
   .c-title {
     border: var(--green-border);
     margin: var(--zero-margin);
-    padding: 20px 45px 5px 0px;
+    padding: 20px 0px 5px 0px;
 
     flex: 1 0 auto;
     align-self: flex-start;
@@ -594,9 +595,9 @@ body {
   .c-title__text {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: 0px 0px 10px 20px;
+    padding: 0px 0px 10px 0px;
     text-align: center;
-
+    letter-spacing: .5rem;
   }
 
   .c-title__text a {
@@ -669,11 +670,11 @@ body {
     border: var(--orange-border);
     margin: 0px 40px 0px 40px;
     padding: 50px 0px 0px 0px;
-    transition: all .2s ease-in-out .2s;
+    transition: all .15s ease-in-out .1s;
   }
 
   .c-banner__logo:hover {
-    transform: scale(1.025);
+    transform: scale(1.1);
   }
 
   .c-banner__leaf-1 {
@@ -702,7 +703,7 @@ body {
     padding: var(--zero-padding);
     font-size: var(--title-font-size);
     font-family: var(--font-anton);
-    line-height: 1.5rem;
+    line-height: var(--title-line-height);
     color: var(--temp-black);
   }
 
@@ -728,7 +729,7 @@ body {
   .c-menu-1__link {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: 55px 5px 55px 5px;
+    padding: 55px 5px 100px 5px;
     text-align: center;
     font-family: var(--font-libre);
   }
@@ -737,10 +738,13 @@ body {
   .c-menu-1__link a {
     border: var(--black-border);
     margin: var(--zero-margin);
-    padding: 15px 45px 15px 45px;
+    padding: 25px 55px 25px 55px;
     text-decoration: none;
     background-color: var(--temp-d);
     color: var(--temp-blank);
+    font-size: 28px;
+    font-weight: 800;
+    border-radius: 5px;
   }
 
 
@@ -767,7 +771,7 @@ body {
   .c-menu-2__link {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: 55px 5px 55px 5px;
+    padding: 55px 5px 100px 5px;
     text-align: center;
     font-family: var(--font-libre);
 
@@ -776,10 +780,13 @@ body {
   .c-menu-2__link a {
     border: var(--black-border);
     margin: var(--zero-margin);
-    padding: 15px 45px 15px 45px;
+    padding: 25px 55px 25px 55px;
     text-decoration: none;
     color: var(--temp-blank);
     background-color: var(--temp-c);
+    font-size: 28px;
+    font-weight: 800;
+    border-radius: 5px;
 
   }
 
@@ -793,10 +800,10 @@ body {
   .c-about__intro {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: 100px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
     font-size: var(--title-font-size);
     font-family: var(--font-anton);
-    line-height: 1.5rem;
+    line-height: var(--title-line-height);
     color: var(--temp-black);
     background-color: var(--temp-blank);
 
@@ -805,9 +812,12 @@ body {
   .c-about__disc {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: 35px 50px 50px 25px;
-    color: var(--temp-black);
-    background-color: rgba(106, 93, 52, .75);
+    padding: 50px 30px 50px 30px;
+    color: var(--temp-blank);
+    background-color: rgba(43, 52, 45, .7);
+    text-align: left;
+    font-family: var(--font-anton);
+
   }
 
   .c-info {
@@ -817,46 +827,48 @@ body {
     background-color: rgba(73, 100, 79, .8);
   }
 
-  .c-info__map {
-    border: var(--orange-border);
-    margin: var(--zero-margin);
-    padding: var(--zero-padding);
-  }
-
-  .c-info__map img {
-    width: 250px;
-    height: 250px;
-  }
 
   .c-info__hours {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: 0px 0px 0px 0px;
-    color: var(--temp-black);
-
+    padding: 50px 50px 0px 50px;
+    color: var(--temp-blank);
+    text-align: left;
+    font-family: var(--font-anton);
   }
 
   .c-info__hours-title h2 {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: 100px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
 
     font-size: var(--title-font-size);
     font-family: var(--font-anton);
-    line-height: 1.5rem;
+    line-height: var(--title-line-height);
     color: var(--temp-black);
     background-color: var(--temp-blank);
   }
 
-  .c-info__hours {
-    padding: 50px 0px 0px 0px;
-  }
 
   .c-info__phone {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: 0px 0px 0px 0px;
-    color: var(--temp-black);
+    padding: 0px 50px 50px 50px;
+    color: var(--temp-blank);
+    text-align: left;
+    font-family: var(--font-anton);
+  }
+
+  .c-info__map {
+    border: var(--orange-border);
+    margin: var(--zero-margin);
+    padding: var(--zero-padding);
+    background-color: var(--temp-blank);
+  }
+
+  .c-info__map img {
+    width: 100%;
+    height: 400px;
   }
 
   .c-contact {
@@ -871,10 +883,10 @@ body {
     margin: var(--zero-margin);
     font-family: var(--font-ssp);
     text-align: left;
-    padding: 100px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
     font-size: var(--title-font-size);
     font-family: var(--font-anton);
-    line-height: 1.5rem;
+    line-height: var(--title-line-height);
     color: var(--temp-black);
     background-color: var(--temp-blank);
   }
@@ -882,30 +894,30 @@ body {
   .c-contact__title {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: 25px 10px 25px 10px;
+    padding: 50px 15px 15px 15px;
     text-align: center;
-    color: var(--temp-black);
+    color: var(--temp-blank);
+    font-family: var(--font-anton);
   }
 
   .c-contact__list {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: var(--zero-padding);
+    padding: 10px 55px 25px 55px;
     list-style: none;
-    display: inline-block;
   }
 
-  .c-contact_list li {
+  .c-contact__list-item {
     border: var(--black-border);
-    margin: 0px 0px 25px 0px;
-    padding: 5px 5px 5px 5px;
-
+    margin: 0px 0px 0px 0px;
+    padding: 25px 5px 0px 5px;
+    display: inline;
   }
 
   .c-contact__link {
     border: var(--purple-border);
     margin: var(--zero-margin);
-    padding: var(--zero-padding);
+    padding: 25px 0px 0px 0px;
     text-decoration: none;
 
   }
@@ -915,9 +927,9 @@ body {
     margin: var(--zero-margin);
     padding: var(--zero-padding);
 
-    width: 25px;
-    height: 25px;
-    fill: var(--temp-a);
+    width: 35px;
+    height: 35px;
+    fill: var(--temp-blank);
 
   }
 
@@ -931,8 +943,8 @@ body {
   .c-legal__text {
     border: var(--orange-border);
     margin: var(--zero-margin);
-    padding: var(--zero-padding);
+    padding: 0px 0px 20px 0px;
     text-align: center;
-    color: var(--temp-black);
+    color: var(--temp-blank);
   }
 }
