@@ -1,16 +1,19 @@
 /* --------------------------| VARIABLES |------------------------------- */
 :root {
 
-
-  /* --black-border: medium solid black; */
+  /* --black-border: medium solid black;
   --purple-border: medium solid purple;
-  /* --red-border: medium solid red;
+  --red-border: medium solid red;
   --green-border: medium solid green;
   --orange-border: medium dashed orange; */
 
 
   --zero-margin: 0 0 0 0;
   --zero-padding: 0 0 0 0;
+
+  --desktop-margin: 0px 12.5% 0px 12.5%;
+  --desktop-font-size-titles: 120px;
+  --desktop-line-height-titles: 4.25rem;
 
   --dark-green: #152619;
   --med-green: #426f4c;
@@ -139,7 +142,7 @@ body {
 }
 
 .c-title {
-  margin: var(--zero-margin);
+  margin: 10px 0px 0px 0px;
   border: var(--green-border);
   padding: var(--zero-padding);
 
@@ -150,7 +153,7 @@ body {
 .c-title__text {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 15%;
   text-align: left;
 }
 
@@ -176,7 +179,7 @@ body {
 
 
 .c-nav {
-  margin: var(--zero-margin);
+  margin: 10px 0px 0px 0px;
   border: var(--green-border);
   padding: var(--zero-padding);
   text-align: center;
@@ -188,7 +191,7 @@ body {
 .c-nav__list {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: 25px 50px 0px 0px;
+  padding: 25px 15% 0px 0px;
   list-style-type: none;
   text-align: right;
 }
@@ -196,16 +199,16 @@ body {
 .c-nav__link {
   margin: var(--zero-margin);
   border: var(--black-border);
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 5%;
   display: inline-block;
 }
 
 .c-nav__link a {
   font-family: var(--font-qs);
   font-weight: 300;
-  font-size: 24px;
+  font-size: 22px;
   color: var(--temp-c);
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-decoration: none;
 }
 
@@ -218,7 +221,7 @@ body {
 
 
 .c-banner {
-  margin: var(--zero-margin);
+  margin: var(--desktop-margin);
   border: var(--green-border);
   padding: var(--zero-padding);
   text-align: center;
@@ -243,11 +246,11 @@ body {
 .c-banner__logo {
   margin: 0px 40px 0px 40px;
   border: var(--orange-border);
-  padding: 50px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
   transition: all .15s ease-in-out .1s;
 
   width: 50%;
-  height: 50%;
+  height: 40%;
 }
 
 .c-banner__logo:hover {
@@ -271,7 +274,7 @@ body {
 
 
 .c-main-title {
-  margin: var(--zero-margin);
+  margin: var(--desktop-margin);
   border: var(--green-border);
   padding: 100px 0px 0px 0px;
 }
@@ -281,23 +284,23 @@ body {
   border: var(--orange-border);
   padding: var(--zero-padding);
 
-  line-height: var(--line-height-titles);
+  line-height: var(--desktop-line-height-titles);
 
   font-family: var(--font-family-titles);
   font-weight: var(--font-weight-titles);
-  font-size: var(--font-size-titles);
+  font-size: var(--desktop-font-size-titles);
   color: var(--font-color-titles);
 }
 
 .c-menu-1 {
-  margin: var(--zero-margin);
+  margin: var(--desktop-margin);
   border: var(--green-border);
   padding: var(--zero-padding);
   background-color: var(--temp-c);
 }
 
 .c-menu-2 {
-  margin: var(--zero-margin);
+  margin: var(--desktop-margin);
   border: var(--green-border);
   padding: var(--zero-padding);
   background-color: var(--temp-d);
@@ -386,7 +389,7 @@ body {
 
 
 .c-about {
-  margin: var(--zero-margin);
+  margin: var(--desktop-margin);
   border: var(--green-border);
   padding: var(--zero-padding);
 
@@ -398,11 +401,11 @@ body {
   padding: 150px 0px 0px 0px;
   background-color: var(--temp-blank);
 
-  line-height: var(--line-height-titles);
+  line-height: var(--desktop-line-height-titles);
 
   font-family: var(--font-family-titles);
   font-weight: var(--font-weight-titles);
-  font-size: var(--font-size-titles);
+  font-size: var(--desktop-font-size-titles);
   color: var(--font-color-titles);
 
   /* background-image: url("../img/kush.jpg");
@@ -415,7 +418,7 @@ body {
 .c-about__disc {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: 60px 30px 60px 30px;
+  padding: 60px 50px 60px 50px;
   background-color: rgba(43, 52, 45, .7);
   text-align: left;
 
@@ -423,7 +426,7 @@ body {
 
   font-family: var(--font-family-titles);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--temp-blank);
 
 }
@@ -432,7 +435,7 @@ body {
 /* ----------------------- INFO ----------------------- */
 
 .c-info {
-  margin: var(--zero-margin);
+  margin: var(--desktop-margin);
   border: var(--green-border);
   padding: var(--zero-padding);
   background-color: rgba(73, 100, 79, .8);
@@ -441,12 +444,12 @@ body {
 .c-info__hours {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: 50px 50px 0px 30px;
+  padding: 50px 50px 0px 50px;
   text-align: left;
 
   font-family: var(--font-family-titles);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--temp-blank);
 }
 
@@ -456,11 +459,11 @@ body {
   padding: 150px 0px 0px 0px;
   background-color: var(--temp-blank);
 
-  line-height: var(--line-height-titles);
+  line-height: var(--desktop-line-height-titles);
 
   font-family: var(--font-family-titles);
   font-weight: var(--font-weight-titles);
-  font-size: var(--font-size-titles);
+  font-size: var(--desktop-font-size-titles);
   color: var(--font-color-titles);
 
   /* background-image: url("../img/kush.jpg");
@@ -474,11 +477,12 @@ body {
 .c-info__phone {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: 0px 50px 50px 30px;
+  padding: 0px 50px 50px 50px;
   text-align: left;
 
   font-family: var(--font-family-titles);
   font-weight: 500;
+  font-size: 18px;
   color: var(--temp-blank);
 }
 
@@ -499,7 +503,7 @@ body {
 
 
 .c-contact {
-  margin: var(--zero-margin);
+  margin: var(--desktop-margin);
   border: var(--green-border);
   padding: var(--zero-padding);
   background-color: var(--temp-c);
@@ -512,29 +516,30 @@ body {
   background-color: var(--temp-blank);
   text-align: left;
 
-  line-height: var(--line-height-titles);
+  line-height: var(--desktop-line-height-titles);
 
   font-family: var(--font-family-titles);
   font-weight: var(--font-weight-titles);
-  font-size: var(--font-size-titles);
+  font-size: var(--desktop-font-size-titles);
   color: var(--font-color-titles);
 }
 
 .c-contact__title {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: 50px 15px 15px 15px;
+  padding: 50px 25px 15px 25px;
   text-align: center;
 
-  font-family: var(--font--family-titles);
-  font-weight: 500;
+  font-family: var(--font-family-titles);
+  font-weight: 400;
+  font-size: 16px;
   color: var(--temp-blank);
 }
 
 .c-contact__list {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: 10px 55px 25px 55px;
+  padding: 35px 55px 25px 55px;
   list-style: none;
   text-align: center;
 }
@@ -559,31 +564,35 @@ body {
   border: var(--green-border);
   padding: var(--zero-padding);
 
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   fill: var(--temp-blank);
 
 }
 
 .c-legal {
-  margin: var(--zero-margin);
+  margin: var(--desktop-margin);
   border: var(--green-border);
-  padding: var(--zero-padding);
+  padding: 0px 0px 20px 0px;
   background-color: var(--temp-c);
 }
 
 .c-legal__text {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: 0px 0px 20px 0px;
+  padding: 25px 0px 10px 0px;
   text-align: center;
 
+
+  font-family: var(--font-family-titles);
+  font-weight: 400;
+  font-size: 16px;
   color: var(--temp-blank);
 }
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
 
   body {
     margin: 0;
@@ -652,7 +661,7 @@ body {
 
   .l-overlay {
     border: var(--green-border);
-    background-color: rgba(43, 52, 45, .4);
+    background-color: rgba(43, 52, 45, .7);
     position: fixed;
 
   }
