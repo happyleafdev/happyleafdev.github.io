@@ -2,9 +2,9 @@
 :root {
 
 
-  /* --black-border: medium solid black;
+  /* --black-border: medium solid black; */
   --purple-border: medium solid purple;
-  --red-border: medium solid red;
+  /* --red-border: medium solid red;
   --green-border: medium solid green;
   --orange-border: medium dashed orange; */
 
@@ -75,7 +75,7 @@ body {
 .l-header {
   boarder: var(--purple-border);
   flex: 1 1 auto;
-  background-color: var(--temp-blank);
+  /* background-color: var(--temp-blank); */
 
   display: flex;
   flex-flow: row nowrap;
@@ -145,14 +145,13 @@ body {
 
   flex: 1 0 auto;
   align-self: stretch;
-  color: var(--temp-c);
 }
 
 .c-title__text {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: var(--zero-padding);
-  text-align: center;
+  padding: 0px 0px 0px 50px;
+  text-align: left;
 }
 
 .c-title__text a {
@@ -162,7 +161,7 @@ body {
 
   font-family: var(--font-qs);
   font-weight: 300;
-  font-size: 38px;
+  font-size: 48px;
   color: var(--temp-c);
   letter-spacing: .1rem;
   text-decoration: none;
@@ -189,26 +188,29 @@ body {
 .c-nav__list {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: var(--zero-padding);
+  padding: 25px 50px 0px 0px;
   list-style-type: none;
+  text-align: right;
 }
 
 .c-nav__link {
   margin: var(--zero-margin);
   border: var(--black-border);
-  padding: var(--zero-padding);
+  padding: 0px 0px 0px 30px;
   display: inline-block;
 }
 
 .c-nav__link a {
+  font-family: var(--font-qs);
+  font-weight: 300;
+  font-size: 24px;
+  color: var(--temp-c);
   text-transform: uppercase;
   text-decoration: none;
-  /* font-size: 14px; */
-  color: var(--temp-black);
 }
 
 .c-nav__link a:hover {
-  color: var(--nav-hover-color);
+  color: var(--temp-b);
 }
 
 
@@ -219,14 +221,13 @@ body {
   margin: var(--zero-margin);
   border: var(--green-border);
   padding: var(--zero-padding);
-  text-align: left;
+  text-align: center;
 
   /* background-image: url("../img/leaves.jpg");
   background-repeat: no-repeat;
   background-position: left right 50 50;
   background-origin: border-box;
   background-attachment: fixed; */
-
 }
 
 .c-banner__text {
@@ -244,6 +245,9 @@ body {
   border: var(--orange-border);
   padding: 50px 0px 0px 0px;
   transition: all .15s ease-in-out .1s;
+
+  width: 50%;
+  height: 50%;
 }
 
 .c-banner__logo:hover {
@@ -378,6 +382,119 @@ body {
 
 
 
+/* ----------------------- ABOUT ----------------------- */
+
+
+.c-about {
+  margin: var(--zero-margin);
+  border: var(--green-border);
+  padding: var(--zero-padding);
+
+}
+
+.c-about__intro {
+  margin: var(--zero-margin);
+  border: var(--orange-border);
+  padding: 150px 0px 0px 0px;
+  background-color: var(--temp-blank);
+
+  line-height: var(--line-height-titles);
+
+  font-family: var(--font-family-titles);
+  font-weight: var(--font-weight-titles);
+  font-size: var(--font-size-titles);
+  color: var(--font-color-titles);
+
+  /* background-image: url("../img/kush.jpg");
+  background-repeat: round;
+  background-position: top 0px right 0px;
+  background-origin: border-box;
+  background-attachment: fixed; */
+}
+
+.c-about__disc {
+  margin: var(--zero-margin);
+  border: var(--orange-border);
+  padding: 60px 30px 60px 30px;
+  background-color: rgba(43, 52, 45, .7);
+  text-align: left;
+
+  line-height: 2rem;
+
+  font-family: var(--font-family-titles);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--temp-blank);
+
+}
+
+
+/* ----------------------- INFO ----------------------- */
+
+.c-info {
+  margin: var(--zero-margin);
+  border: var(--green-border);
+  padding: var(--zero-padding);
+  background-color: rgba(73, 100, 79, .8);
+}
+
+.c-info__hours {
+  margin: var(--zero-margin);
+  border: var(--orange-border);
+  padding: 50px 50px 0px 30px;
+  text-align: left;
+
+  font-family: var(--font-family-titles);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--temp-blank);
+}
+
+.c-info__hours-title h2 {
+  margin: var(--zero-margin);
+  border: var(--orange-border);
+  padding: 150px 0px 0px 0px;
+  background-color: var(--temp-blank);
+
+  line-height: var(--line-height-titles);
+
+  font-family: var(--font-family-titles);
+  font-weight: var(--font-weight-titles);
+  font-size: var(--font-size-titles);
+  color: var(--font-color-titles);
+
+  /* background-image: url("../img/kush.jpg");
+  background-repeat: round;
+  background-position: top 0px right 0px;
+  background-origin: border-box;
+  background-attachment: fixed; */
+}
+
+
+.c-info__phone {
+  margin: var(--zero-margin);
+  border: var(--orange-border);
+  padding: 0px 50px 50px 30px;
+  text-align: left;
+
+  font-family: var(--font-family-titles);
+  font-weight: 500;
+  color: var(--temp-blank);
+}
+
+.c-info__map {
+  margin: var(--zero-margin);
+  border: var(--orange-border);
+  padding: var(--zero-padding);
+  background-color: var(--temp-blank);
+}
+
+.c-info__map img {
+  width: 100%;
+  height: 400px;
+}
+
+
 /* ----------------------- FOOTER ----------------------- */
 
 
@@ -419,6 +536,7 @@ body {
   border: var(--orange-border);
   padding: 10px 55px 25px 55px;
   list-style: none;
+  text-align: center;
 }
 
 .c-contact__list-item {
@@ -465,7 +583,7 @@ body {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
   body {
     margin: 0;
@@ -710,7 +828,7 @@ body {
     margin: var(--zero-margin);
     border: var(--green-border);
     padding: var(--zero-padding);
-    text-align: left;
+    text-align: center;
 
     /* background-image: url("../img/leaves.jpg");
     background-repeat: no-repeat;
@@ -1015,6 +1133,7 @@ body {
     border: var(--orange-border);
     padding: 10px 55px 25px 55px;
     list-style: none;
+    text-align: center;
   }
 
   .c-contact__list-item {
