@@ -677,7 +677,7 @@ body {
     .l-overlay__close-button {
         margin: var(--zero-margin);
         border: var(--orange-border);
-        padding: 5px 10px 0px 10px;
+        padding: 5px 0px 0px 0px;
         text-align: left;
     }
 
@@ -751,7 +751,7 @@ body {
     .c-title__text {
         margin: var(--zero-margin);
         border: var(--orange-border);
-        padding: 15px 50px 10px 0px;
+        padding: 10px 50px 10px 0px;
 
         text-align: center;
     }
@@ -771,7 +771,7 @@ body {
     }
 
     .c-title__text a:hover {
-        color: var(--temp-b);
+        color: var(--dark-green);
     }
 
     .c-nav {
@@ -1032,20 +1032,20 @@ body {
     }
     
     .c-slideshow {
-        width: 2800px;
         height: 325px;
+        overflow-y: hidden;
+
 
     }
 
     .c-slideshow__img {
         animation: c-slideshow__img 12s ease infinite;
-
     }
     
     .c-slideshow__img > img {
         opacity: 1;
-        height: 375x;
         width: 400px;
+        height: 375x;
     }
     
     @keyframes c-slideshow__img {
@@ -1067,8 +1067,8 @@ body {
     .c-info__hours {
         margin: var(--zero-margin);
         border: var(--orange-border);
-        padding: 50px 50px 0px 30px;
-        text-align: left;
+        padding: 40px 50px 0px 30px;
+        text-align: center;
 
         font-family: var(--font-family-text);
         font-weight: bold;
@@ -1079,7 +1079,7 @@ body {
     .c-info__hours-title > h2 {
         margin: var(--zero-margin);
         border: var(--orange-border);
-        padding: 150px 0px 0px 0px;
+        padding: 75px 0px 0px 0px;
         background-color: var(--temp-white);
 
         line-height: var(--line-height-titles);
@@ -1094,9 +1094,9 @@ body {
     .c-info__phone {
         margin: var(--zero-margin);
         border: var(--orange-border);
-        padding: 20px 50px 50px 30px;
-        text-align: left;
-
+        padding: 20px 50px 40px 30px;
+        text-align: center;
+        text-decoration: none;
         font-family: var(--font-family-text);
         font-weight: bold;
         font-size: 18px;
@@ -1125,7 +1125,7 @@ body {
     .c-contact__logo {
         margin: var(--zero-margin);
         border: var(--orange-border);
-        padding: 150px 0px 0px 0px;
+        padding: 100px 0px 0px 0px;
         background-color: var(--temp-white);
         text-align: left;
 
@@ -1205,7 +1205,7 @@ body {
     .mobile-btn-open {
         margin: var(--zero-margin);
         border: var(--orange-border);
-        padding: 5px 30px 5px 30px;
+        padding: 0px 20px 0px 20px;
         background: var(--temp-white);
         text-align: left;
 
@@ -1223,11 +1223,11 @@ body {
     .mobile-btn-close {
         margin: var(--zero-margin);
         border: var(--black-border);
-        padding: 0px 20px 10px 20px;
+        padding: 0px 20px 0px 20px;
         background: none;
 
-        font-weight: normal;
-        font-size: 58px;
+        font-weight: bold;
+        font-size: 42px;
         color: var(--temp-white);
         text-decoration: none;
         cursor: pointer;
@@ -1237,7 +1237,7 @@ body {
     }
 
     .mobile-btn-close:hover {
-        color: var(--temp-b);
+        color: var(--dark-green);
     }
 
     .mobile-btn-open:hover {
