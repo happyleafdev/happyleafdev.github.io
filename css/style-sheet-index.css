@@ -751,7 +751,7 @@ body {
     .c-title__text {
         margin: var(--zero-margin);
         border: var(--orange-border);
-        padding: 10px 50px 10px 0px;
+        padding: 10px 50px 10px 10px;
 
         text-align: center;
     }
