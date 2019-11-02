@@ -468,7 +468,7 @@ body {
 .c-info__hours-title > h2 {
   margin: var(--zero-margin);
   border: var(--orange-border);
-  padding: 150px 0px 0px 0px;
+  padding: 75px 0px 0px 0px;
   background-color: var(--temp-white);
 
   line-height: var(--desktop-line-height-titles);
@@ -685,7 +685,7 @@ body {
     .l-overlay__nav-list {
         margin: var(--zero-margin);
         border: var(--orange-border);
-        padding: 25px 0px 100% 0px;
+        padding: 0px 0px 100% 0px;
         text-align: center;
         transition: color 0.85s cubic-bezier(0.19, 1, 0.22, 1);
     }
@@ -1033,7 +1033,7 @@ body {
     
     .c-slideshow {
         width: 2800px;
-        height: 350px;
+        height: 325px;
 
     }
 
@@ -1112,7 +1112,7 @@ body {
 
     .c-info__map > img {
         width: 100%;
-        height: 375px;
+        height: 325px;
     }
 
     .c-contact {
