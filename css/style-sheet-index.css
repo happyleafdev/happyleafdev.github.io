@@ -1029,13 +1029,12 @@ body {
     
     .c-slideshow {
         margin: auto;
-        height: 325px;
+        height: 525px;
 /*        overflow: hidden;*/
     }
 
     .c-slideshow__img {
         animation: all 2.2s ease infinite;
-/*        transition: all 0.5s ease;*/
 
         display: flex;
         flex-flow: row nowrap;
@@ -1045,6 +1044,7 @@ body {
     
     .c-slideshow__img > img {
         width: 100%;
+        height: 400px;
     }
 
 
