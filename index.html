@@ -91,7 +91,6 @@
 
               <!-- LOGO -->
               <div class="c-banner">
-                  <h2 class="c-banner__text"></h2>
                   <svg class="c-banner__logo" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 504 504" style="enable-background:new 0 0 504 504;" xml:space="preserve">
                       <path class="c-banner__leaf-2" d="M231.9,358.8c0,0-123.6-133.4,21.1-319.7c91.9,89.5,141.5,192,8.9,319.7c-8.9-57.8-10.6-116.3-4.1-159.8
             	C236,233.5,231.9,358.8,231.9,358.8z"/>
@@ -142,12 +141,12 @@
               
               <div class="c-slideshow">
                   <div class="c-slideshow__img">
-                      <img src="./img/happyleaf_2.jpg" alt="slideshow">
-                      <img src="./img/happyleaf_3.jpg" alt="slideshow">
-                      <img src="./img/happyleaf_4.jpg" alt="slideshow">
-                      <img src="./img/happyleaf_5.jpg" alt="slideshow">
-                      <img src="./img/happyleaf_6.jpg" alt="slideshow">
-                      <img src="./img/happyleaf_7.jpg" alt="slideshow">
+                      <img class="" src="./img/happyleaf_2.jpg" alt="slideshow">
+                      <img class="" src="./img/happyleaf_3.jpg" alt="slideshow">
+                      <img class="" src="./img/happyleaf_4.jpg" alt="slideshow">
+                      <img class="" src="./img/happyleaf_5.jpg" alt="slideshow">
+                      <img class="" src="./img/happyleaf_6.jpg" alt="slideshow">
+                      <img class="" src="./img/happyleaf_7.jpg" alt="slideshow">
                   </div>
               </div>
           </div>
@@ -170,13 +169,13 @@
 
 
                   <div class="c-info__phone">
-                      <p>1-971-800-0420</p>
+                      <p>971-800-0420</p>
                       <span>___</span>
                       <p>1301 NE Broadway St </p>
                       <p>Portland, OR 97232</p>
                   </div>
 
-                  <div class="c-info__map">
+                  <div class="c-info__img">
                       <img src="./img/happyleaf_1.jpg" alt="store_map">
                   </div>
 
@@ -255,6 +254,7 @@
           </div>
     </div>
 
+    <script src="js/jquery-3.4.1.slim.js"></script>
     <script>
         function openNav(){
             document.querySelector('#body-wrapper').classList.replace('show-body', 'hide-body');
@@ -266,6 +266,25 @@
             document.querySelector('#overlay').classList.replace('overlay-on', 'overlay-off');
 
         };
+              
+        
+        $(document).ready(function () {
+            var $lis = $('.c-slideshow__img img'),
+                $cur = $lis.first().addClass('current'),
+                $next = $cur.next().addClass('next');
+            setInterval(function () {
+                $cur.removeClass('current');
+                $cur = $next.removeClass('next').addClass('current');
+        
+                $next = $cur.next();
+                if (!$next.length) {
+                    $next = $lis.first();
+                }
+                $next.addClass('next');
+            }, 3000);
+        });
+        
+//        window.onload = startSlide();
     </script>
   </body>
 </html>
