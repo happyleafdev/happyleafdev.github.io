@@ -935,18 +935,10 @@ body {
     
     
     .menu-2-background {
-/*        background-image: url(../img/headband.jpg);*/
         z-index: 0;
         opacity: 1;
-
-/*
-        background-repeat: round;
-        background-position: top 0px right 0px;
-        background-origin: border-box;
-        background-attachment: fixed;
-        
-*/
     }
+    
     .c-menu-2__title {
         margin: var(--zero-margin);
         border: var(--orange-border);
@@ -1025,11 +1017,12 @@ body {
     }
         
     .current {
-        opacity: 0;
+        opacity: 1;
         order: -1;
     }
+    
     .next {
-        opacity: 1;
+        opacity: 0;
 /*        order: 2;*/
 /*        visibility: hidden;*/
     }
